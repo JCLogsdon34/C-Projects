@@ -1,0 +1,11 @@
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.BLL\bin\Debug\JCL.Banker.BLL.dll
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.BLL\bin\Debug\JCL.Banker.BLL.pdb
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.BLL\bin\Debug\JCL.Banker.Data.dll
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.BLL\bin\Debug\JCL.Banker.Model.dll
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.BLL\bin\Debug\JCL.Banker.Data.pdb
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.BLL\bin\Debug\JCL.Banker.Model.pdb
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.BLL\obj\Debug\JCL.Banker.BLL.csprojAssemblyReference.cache
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.BLL\obj\Debug\JCL.Banker.BLL.csproj.CoreCompileInputs.cache
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.BLL\obj\Debug\JCL.Banker.BLL.csproj.CopyComplete
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.BLL\obj\Debug\JCL.Banker.BLL.dll
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.BLL\obj\Debug\JCL.Banker.BLL.pdb

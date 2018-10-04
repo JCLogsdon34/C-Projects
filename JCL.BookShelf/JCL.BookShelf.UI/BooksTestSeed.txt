@@ -1,0 +1,6 @@
+Title,Author,Publisher,ReleaseDate
+Sartoris,William Faulkner,Routledge,1929
+Green Centuries,Caroline Gordon,Vanderbilt University,1932
+Shepherd Cycle,James Hoggs,Edinburgh,1756
+Kidnapped!,Robert Lewis Stevenson,Random House,1795
+Border Ballads,Sir Walter Scott,Clarke Magazine,1792

@@ -1,0 +1,17 @@
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Tests\bin\Debug\JCL.Banker.Tests.dll.config
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Tests\bin\Debug\JCL.Banker.Tests.dll
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Tests\bin\Debug\JCL.Banker.Tests.pdb
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Tests\bin\Debug\JCL.Banker.BLL.dll
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Tests\bin\Debug\JCL.Banker.Data.dll
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Tests\bin\Debug\JCL.Banker.Model.dll
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Tests\bin\Debug\nunit.framework.dll
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Tests\bin\Debug\JCL.Banker.BLL.pdb
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Tests\bin\Debug\JCL.Banker.Data.pdb
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Tests\bin\Debug\JCL.Banker.Model.pdb
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Tests\bin\Debug\nunit.framework.pdb
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Tests\bin\Debug\nunit.framework.xml
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Tests\obj\Debug\JCL.Banker.Tests.csprojAssemblyReference.cache
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Tests\obj\Debug\JCL.Banker.Tests.csproj.CoreCompileInputs.cache
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Tests\obj\Debug\JCL.Banker.Tests.csproj.CopyComplete
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Tests\obj\Debug\JCL.Banker.Tests.dll
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Tests\obj\Debug\JCL.Banker.Tests.pdb

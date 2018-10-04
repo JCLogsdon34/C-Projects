@@ -1,0 +1,9 @@
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Data\bin\Debug\JCL.Banker.Data.dll
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Data\bin\Debug\JCL.Banker.Data.pdb
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Data\bin\Debug\JCL.Banker.Model.dll
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Data\bin\Debug\JCL.Banker.Model.pdb
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Data\obj\Debug\JCL.Banker.Data.csprojAssemblyReference.cache
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Data\obj\Debug\JCL.Banker.Data.csproj.CoreCompileInputs.cache
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Data\obj\Debug\JCL.Banker.Data.csproj.CopyComplete
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Data\obj\Debug\JCL.Banker.Data.dll
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Data\obj\Debug\JCL.Banker.Data.pdb

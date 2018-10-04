@@ -1,0 +1,7 @@
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.BookShelf.UI\JCL.BookShelf.UI\obj\Debug\JCL.BookShelf.csprojAssemblyReference.cache
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.BookShelf.UI\JCL.BookShelf.UI\obj\Debug\JCL.BookShelf.csproj.CoreCompileInputs.cache
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.BookShelf.UI\JCL.BookShelf.UI\bin\Debug\JCL.BookShelf.UI.exe.config
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.BookShelf.UI\JCL.BookShelf.UI\bin\Debug\JCL.BookShelf.UI.exe
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.BookShelf.UI\JCL.BookShelf.UI\bin\Debug\JCL.BookShelf.UI.pdb
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.BookShelf.UI\JCL.BookShelf.UI\obj\Debug\JCL.BookShelf.UI.exe
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.BookShelf.UI\JCL.BookShelf.UI\obj\Debug\JCL.BookShelf.UI.pdb

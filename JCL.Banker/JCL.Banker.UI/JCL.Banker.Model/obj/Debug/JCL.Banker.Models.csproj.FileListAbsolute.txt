@@ -1,0 +1,6 @@
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Model\bin\Debug\JCL.Banker.Model.dll
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Model\bin\Debug\JCL.Banker.Model.pdb
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Model\obj\Debug\JCL.Banker.Models.csprojAssemblyReference.cache
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Model\obj\Debug\JCL.Banker.Models.csproj.CoreCompileInputs.cache
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Model\obj\Debug\JCL.Banker.Model.dll
+c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Model\obj\Debug\JCL.Banker.Model.pdb
