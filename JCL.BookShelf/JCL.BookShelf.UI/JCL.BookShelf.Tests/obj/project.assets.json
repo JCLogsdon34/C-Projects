@@ -953,11 +953,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JCLog\\Documents\\Visual Studio 2017\\Projects\\JCL.BookShelf.UI\\JCL.BookShelf.Tests\\JCL.BookShelf.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\JCLog\\Desktop\\C# Work\\JCL.BookShelf\\JCL.BookShelf.UI\\JCL.BookShelf.Tests\\JCL.BookShelf.Tests.csproj",
       "projectName": "JCL.BookShelf.Tests",
-      "projectPath": "C:\\Users\\JCLog\\Documents\\Visual Studio 2017\\Projects\\JCL.BookShelf.UI\\JCL.BookShelf.Tests\\JCL.BookShelf.Tests.csproj",
+      "projectPath": "C:\\Users\\JCLog\\Desktop\\C# Work\\JCL.BookShelf\\JCL.BookShelf.UI\\JCL.BookShelf.Tests\\JCL.BookShelf.Tests.csproj",
       "packagesPath": "C:\\Users\\JCLog\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JCLog\\Documents\\Visual Studio 2017\\Projects\\JCL.BookShelf.UI\\JCL.BookShelf.Tests\\obj\\",
+      "outputPath": "C:\\Users\\JCLog\\Desktop\\C# Work\\JCL.BookShelf\\JCL.BookShelf.UI\\JCL.BookShelf.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -976,14 +976,14 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\JCLog\\Documents\\Visual Studio 2017\\Projects\\JCL.BookShelf.UI\\JCL.BookShelf.BLL\\JCL.BookShelf.BLL.csproj": {
-              "projectPath": "C:\\Users\\JCLog\\Documents\\Visual Studio 2017\\Projects\\JCL.BookShelf.UI\\JCL.BookShelf.BLL\\JCL.BookShelf.BLL.csproj"
+            "C:\\Users\\JCLog\\Desktop\\C# Work\\JCL.BookShelf\\JCL.BookShelf.UI\\JCL.BookShelf.BLL\\JCL.BookShelf.BLL.csproj": {
+              "projectPath": "C:\\Users\\JCLog\\Desktop\\C# Work\\JCL.BookShelf\\JCL.BookShelf.UI\\JCL.BookShelf.BLL\\JCL.BookShelf.BLL.csproj"
             },
-            "C:\\Users\\JCLog\\Documents\\Visual Studio 2017\\Projects\\JCL.BookShelf.UI\\JCL.Bookshelf.Data\\JCL.Bookshelf.Data.csproj": {
-              "projectPath": "C:\\Users\\JCLog\\Documents\\Visual Studio 2017\\Projects\\JCL.BookShelf.UI\\JCL.Bookshelf.Data\\JCL.Bookshelf.Data.csproj"
+            "C:\\Users\\JCLog\\Desktop\\C# Work\\JCL.BookShelf\\JCL.BookShelf.UI\\JCL.Bookshelf.Data\\JCL.Bookshelf.Data.csproj": {
+              "projectPath": "C:\\Users\\JCLog\\Desktop\\C# Work\\JCL.BookShelf\\JCL.BookShelf.UI\\JCL.Bookshelf.Data\\JCL.Bookshelf.Data.csproj"
             },
-            "C:\\Users\\JCLog\\Documents\\Visual Studio 2017\\Projects\\JCL.BookShelf.UI\\JCL.BookShelf.Models\\JCL.BookShelf.Models.csproj": {
-              "projectPath": "C:\\Users\\JCLog\\Documents\\Visual Studio 2017\\Projects\\JCL.BookShelf.UI\\JCL.BookShelf.Models\\JCL.BookShelf.Models.csproj"
+            "C:\\Users\\JCLog\\Desktop\\C# Work\\JCL.BookShelf\\JCL.BookShelf.UI\\JCL.BookShelf.Models\\JCL.BookShelf.Models.csproj": {
+              "projectPath": "C:\\Users\\JCLog\\Desktop\\C# Work\\JCL.BookShelf\\JCL.BookShelf.UI\\JCL.BookShelf.Models\\JCL.BookShelf.Models.csproj"
             }
           }
         }

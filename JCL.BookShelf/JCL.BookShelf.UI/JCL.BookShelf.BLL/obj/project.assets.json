@@ -850,11 +850,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JCLog\\Documents\\Visual Studio 2017\\Projects\\JCL.BookShelf.UI\\JCL.BookShelf.BLL\\JCL.BookShelf.BLL.csproj",
+      "projectUniqueName": "C:\\Users\\JCLog\\Desktop\\C# Work\\JCL.BookShelf\\JCL.BookShelf.UI\\JCL.BookShelf.BLL\\JCL.BookShelf.BLL.csproj",
       "projectName": "JCL.BookShelf.BLL",
-      "projectPath": "C:\\Users\\JCLog\\Documents\\Visual Studio 2017\\Projects\\JCL.BookShelf.UI\\JCL.BookShelf.BLL\\JCL.BookShelf.BLL.csproj",
+      "projectPath": "C:\\Users\\JCLog\\Desktop\\C# Work\\JCL.BookShelf\\JCL.BookShelf.UI\\JCL.BookShelf.BLL\\JCL.BookShelf.BLL.csproj",
       "packagesPath": "C:\\Users\\JCLog\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JCLog\\Documents\\Visual Studio 2017\\Projects\\JCL.BookShelf.UI\\JCL.BookShelf.BLL\\obj\\",
+      "outputPath": "C:\\Users\\JCLog\\Desktop\\C# Work\\JCL.BookShelf\\JCL.BookShelf.UI\\JCL.BookShelf.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
