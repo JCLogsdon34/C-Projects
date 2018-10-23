@@ -22,7 +22,7 @@ namespace JCL.BookShelf.UI.Workflows
             ConsoleIO.PrintBookListHeader();
             Console.WriteLine();
 
-            int index = ConsoleIO.GetBookIndexFromUser("Which book would you like to edit?", books.Count());
+            int index = ConsoleIO.GetBookIndexFromUser("Which book would you like to edit?");
             index--;
 
             Console.WriteLine();

@@ -11,11 +11,12 @@ namespace JCL.BookShelf.UI.Data
 {
     public class BookRepository
     {
-//        private string _filePath;
+        //        private string _filePath;
 
         public BookRepository()
         {
-       //     _filePath = filePath;
+            //     _filePath = filePath;
+
         }
 
         // CRUD
@@ -49,9 +50,7 @@ namespace JCL.BookShelf.UI.Data
         public Book GetBook(int BookID)
         {
             SelectQueryWithParameters para = new SelectQueryWithParameters();
-            Book book = new Book();
-            book = para.GetBook(BookID);
-            return book;
+            return para.GetBook(BookID);
         }
 
         public Book Add(Book book)

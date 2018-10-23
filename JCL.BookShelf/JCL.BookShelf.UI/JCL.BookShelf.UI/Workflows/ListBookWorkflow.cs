@@ -14,16 +14,17 @@ namespace JCL.BookShelf.UI.Workflows
         public void Execute()
         {
             BookRepository repo = new BookRepository();
-            List<Book> books = repo.List();
+            List<Book> books = new List<Book>();
+            books = repo.List();
 
             Console.Clear();
             Console.WriteLine("Book List");
 
             ConsoleIO.PrintBookListHeader();
 
-            foreach (var book in books)
+            foreach (Book book in books)
             {
-                Console.WriteLine(ConsoleIO.BookLineFormat, book.Title + ", " + book.AuthorName + ", " + book.Publisher + ", " + book.ReleaseDate.ToString());
+                Console.WriteLine(book.BookID + ", " + book.Title + ", " + book.AuthorName + ", " + book.Publisher + ", " + book.ReleaseDate.ToString());
             }
 
             Console.WriteLine();

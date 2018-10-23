@@ -12,30 +12,36 @@ namespace JCL.Bookshelf.Data.Data
     {
         public void UpdateBook(Book book)
         {
-            using (SqlConnection conn = new SqlConnection())
+            try {
+                using (SqlConnection conn = new SqlConnection())
+                {
+                    conn.ConnectionString = "Server=localhost;Database=BookShelfTest;"
+                   + "User Id=sa;Password=HenryClay1";
+
+                    SqlCommand cmd = new SqlCommand();
+                    cmd.Connection = conn;
+                    cmd.CommandText = " UPDATE Book" +
+                        " SET Title = @Title" +
+                        " SET AuthorName = @Author" +
+                        " SET Publisher = @Publisher" +
+                        " SET ReleaseDate = @ReleaseDate" +
+                        " WHERE BookID = @BookID" +
+                        " GO";
+
+                    cmd.Parameters.AddWithValue("@Title", book.Title);
+                    cmd.Parameters.AddWithValue("@Author", book.AuthorName);
+                    cmd.Parameters.AddWithValue("@Publisher", book.Publisher);
+                    cmd.Parameters.AddWithValue("@ReleaseDate", book.ReleaseDate);
+                    cmd.Parameters.AddWithValue("@BookID", book.BookID);
+
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }catch (SqlException exception)
             {
-                conn.ConnectionString = "Server=localhost;Database=BookShelfTest;"
-               + "User Id=sa;Password=HenryClay1";
-
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = conn;
-                cmd.CommandText = " UPDATE Book " +
-                    " SET Title = @Title, " +
-                    " SET AuthorName = @Author" +
-                    " SET Publisher = @Publisher, " +
-                    " SET ReleaseDate = @ReleaseDate" +
-                    " WHERE BookID = @BookID" +
-                    " GO";
-
-                cmd.Parameters.AddWithValue("@Title", book.Title);
-                cmd.Parameters.AddWithValue("@Author", book.AuthorName);
-                cmd.Parameters.AddWithValue("@Publisher", book.Publisher);
-                cmd.Parameters.AddWithValue("@ReleaseDate", book.ReleaseDate);
-                cmd.Parameters.AddWithValue("@BookID", book.BookID);
-
-                conn.Open();
-                cmd.ExecuteNonQuery();
+                Console.WriteLine("SQL Exception Thrown");
             }
+            
         }
     }
 }

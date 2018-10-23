@@ -22,7 +22,7 @@ namespace JCL.BookShelf.UI.Workflows
             ConsoleIO.PrintBookListHeader();
             Console.WriteLine();
 
-            int index = ConsoleIO.GetBookIndexFromUser("Which book would you like to delete?", books.Count());
+            int index = ConsoleIO.GetBookIndexFromUser("Which book would you like to delete?");
             index--;
 
             string answer = ConsoleIO.GetYesNoAnswerFromUser($"Are you sure you want to remove {books[index].Title} {books[index].AuthorName}");

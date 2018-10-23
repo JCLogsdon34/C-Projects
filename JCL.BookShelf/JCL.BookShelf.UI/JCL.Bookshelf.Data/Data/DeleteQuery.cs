@@ -12,20 +12,26 @@ namespace JCL.Bookshelf.Data.Data
     {
         public void RemoveBook(int BookID)
         {
-            using (SqlConnection conn = new SqlConnection())
+            try
             {
-                conn.ConnectionString = "Server=localhost;Database=BookShelfTest;"
-               + "User Id=sa;Password=HenryClay1";
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = conn;
-                cmd.CommandText =
-                    " DELETE FROM Book" +
-                     " WHERE BookID = @BookID" +
-                     " GO";
+                using (SqlConnection conn = new SqlConnection())
+                {
+                    conn.ConnectionString = "Server=localhost;Database=BookShelfTest;"
+                   + "User Id=sa;Password=HenryClay1";
+                    SqlCommand cmd = new SqlCommand();
+                    cmd.Connection = conn;
+                    cmd.CommandText =
+                        " DELETE FROM Book" +
+                         " WHERE BookID = @BookID" +
+                         " GO";
 
-                cmd.Parameters.AddWithValue("@BookID", BookID);
-                conn.Open();
-                cmd.ExecuteNonQuery();
+                    cmd.Parameters.AddWithValue("@BookID", BookID);
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }catch(SqlException exception)
+            {
+                Console.WriteLine("SQLException Thrown");
             }
         }
     }

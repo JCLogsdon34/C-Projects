@@ -109,33 +109,25 @@ namespace JCL.BookShelf.UI.Helpers
                 }
             }
 
-        public static int GetBookIndexFromUser(string prompt, int count)
+        public static int GetBookIndexFromUser(string prompt)
         {
-            int output;
+            int output = 0;
 
             while (true)
             {
                 Console.Write(prompt);
                 string input = Console.ReadLine();
+                output = int.Parse(input);
 
-                if (!int.TryParse(input, out output))
-                {
-                    Console.WriteLine("You must enter valid integer.");
-                    Console.WriteLine("Press any key to continue...");
-                    Console.ReadKey();
-                }
-                else
-                {
-                    if (output < 1 || output > count)
+                    if (output < 1 || output > 5)
                     {
-                        Console.WriteLine("Please choose a student by number between {0} and {1}", 1, count);
+                        Console.WriteLine("Please choose a student by number between {1} and {5}", 1, 5);
                         Console.WriteLine("Press any key to continue...");
                         Console.ReadKey();
                         continue;
                     }
 
-                    return output;
-                }
+                    return output;                
             }
         }
     }

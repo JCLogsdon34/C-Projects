@@ -12,26 +12,32 @@ namespace JCL.Bookshelf.Data.Data
     {
         public Book InsertBook(Book book)
         {
-            using (SqlConnection conn = new SqlConnection())
+            try
             {
-                conn.ConnectionString = "Server=localhost;Database=BookShelfTest;"
-               + "User Id=sa;Password=HenryClay1";
+                using (SqlConnection conn = new SqlConnection())
+                {
+                    conn.ConnectionString = "Server=localhost;Database=BookShelfTest;"
+                   + "User Id=sa;Password=HenryClay1";
 
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = conn;
-                cmd.CommandText = " INSERT INTO Book (Title, Author, Publisher, ReleaseDate) " +
-                    " VALUES (@Title, @Author, @Publisher, @ReleaseDate)" +
-                    " GO"; 
+                    SqlCommand cmd = new SqlCommand();
+                    cmd.Connection = conn;
+                    cmd.CommandText = " INSERT INTO Book (Title, Author, Publisher, ReleaseDate)" +
+                        " VALUES (@Title, @Author, @Publisher, @ReleaseDate)" +
+                        " GO";
 
-                cmd.Parameters.AddWithValue("@Title", book.Title);
-                cmd.Parameters.AddWithValue("@Author", book.AuthorName);
-                cmd.Parameters.AddWithValue("@Publisher", book.Publisher);
-                cmd.Parameters.AddWithValue("@ReleaseDate", book.ReleaseDate);
+                    cmd.Parameters.AddWithValue("@Title", book.Title);
+                    cmd.Parameters.AddWithValue("@Author", book.AuthorName);
+                    cmd.Parameters.AddWithValue("@Publisher", book.Publisher);
+                    cmd.Parameters.AddWithValue("@ReleaseDate", book.ReleaseDate);
 
-                conn.Open();
-                book.BookID = cmd.ExecuteNonQuery();
-                return book;
+                    conn.Open();
+                    book.BookID = cmd.ExecuteNonQuery();
+                }
+            }catch (SqlException exception)
+            {
+                Console.WriteLine("Sql Exception Caught");
             }
+            return book;         
         }
     }
 }

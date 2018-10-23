@@ -19,3 +19,6 @@ CREATE TABLE Book (
 	ReleaseDate int NOT NULL
 )
 GO
+
+SET IDENTITY_INSERT Book ON;
+GO

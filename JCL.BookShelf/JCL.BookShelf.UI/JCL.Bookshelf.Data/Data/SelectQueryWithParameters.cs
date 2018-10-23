@@ -22,25 +22,32 @@ namespace JCL.Bookshelf.Data.Data
 
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conn;
-                cmd.CommandText = " SELECT BookID, Title, Author, Publisher, ReleaseDate " +
-                    " FROM Book " +
+                cmd.CommandText = " SELECT *" +
+                    " FROM Book" +
                     " WHERE BookID = @BookID" +
                     " GO"; 
 
                 cmd.Parameters.AddWithValue("@BookID", BookID);
 
                 conn.Open();
-                using (SqlDataReader dr = cmd.ExecuteReader())
+                try
                 {
-                    while (dr.Read())
+                    using (SqlDataReader dr = cmd.ExecuteReader())
                     {
-                        currentBook.Title = dr["Title"].ToString();
-                        currentBook.AuthorName = dr["Author"].ToString();
-                        currentBook.Publisher = dr["Publisher"].ToString();
-                        currentBook.ReleaseDate = int.Parse(dr["ReleaseDate"].ToString());
+                        while (dr.Read())
+                        {
+                            currentBook.Title = dr["Title"].ToString();
+                            currentBook.AuthorName = dr["Author"].ToString();
+                            currentBook.Publisher = dr["Publisher"].ToString();
+                            currentBook.ReleaseDate = int.Parse(dr["ReleaseDate"].ToString());
+                        }
                     }
+                    conn.Close();
                 }
-             //   conn.Close();
+                catch (SqlException exception) {
+                    Console.WriteLine("SQL Exception Occurred");
+                }
+                
             }
             return currentBook;
         }

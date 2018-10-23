@@ -14,29 +14,34 @@ namespace JCL.Bookshelf.Data.Data
         {
             List<Book> books = new List<Book>();
             Book currentBook = new Book();
-            using (SqlConnection conn = new SqlConnection())
+            try
             {
-                conn.ConnectionString = "Server=localhost;Database=BookShelfTest;"
-               + "User Id=sa;Password=HenryClay1";
-
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = conn;
-                cmd.CommandText = " SELECT BookID, Title, Author, Publisher, ReleaseDate " +
-                    " FROM Book " +
-                    " GO";
-
-                conn.Open();
-                using (SqlDataReader dr = cmd.ExecuteReader())
+                using (SqlConnection conn = new SqlConnection())
                 {
-                    while (dr.Read())
+                    conn.ConnectionString = "Server=localhost;Database=BookShelfTest;"
+                   + "User Id=sa;Password=HenryClay1";
+
+                    SqlCommand cmd = new SqlCommand();
+                    cmd.Connection = conn;
+                    cmd.CommandText = " SELECT *" +
+                        " FROM Book" +
+                        " GO";
+
+                    conn.Open();
+                    using (SqlDataReader dr = cmd.ExecuteReader())
                     {
-                        currentBook.Title = dr["Title"].ToString();
-                        currentBook.AuthorName = dr["Author"].ToString();
-                        currentBook.Publisher = dr["Publisher"].ToString();
-                        currentBook.ReleaseDate = int.Parse(dr["ReleaseDate"].ToString());
-                        books.Add(currentBook);
+                        while (dr.Read())
+                        {
+                            currentBook.Title = dr["Title"].ToString();
+                            currentBook.AuthorName = dr["Author"].ToString();
+                            currentBook.Publisher = dr["Publisher"].ToString();
+                            currentBook.ReleaseDate = int.Parse(dr["ReleaseDate"].ToString());
+                            books.Add(currentBook);
+                        }
                     }
                 }
+            } catch (SqlException exception) {
+                Console.WriteLine("SQL Exception thrown");
             }
             return books;
         }

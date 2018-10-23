@@ -19,7 +19,7 @@ CREATE TABLE Book (
 )
 GO
 
-SET IDENTITY_INSERT AccountType ON;
+SET IDENTITY_INSERT Book ON;
 GO
  
 INSERT INTO Book(BookID, Title, Author, Publisher, ReleaseDate)
