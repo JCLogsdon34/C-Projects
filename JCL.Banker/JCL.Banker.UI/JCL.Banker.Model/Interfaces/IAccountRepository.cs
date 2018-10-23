@@ -8,7 +8,7 @@ namespace JCL.Banker.Model.Interfaces
 {
     public interface IAccountRepository
     {
-        Account LoadAccount(string AccountNumber);
+        Account LoadAccount(int AccountID);
 
         void SaveAccount(Account account);
     }

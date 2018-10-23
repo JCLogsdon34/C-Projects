@@ -7,3 +7,12 @@ C:\Users\JCLog\Documents\Visual Studio 2017\Projects\JCL.BookShelf.UI\JCL.BookSh
 C:\Users\JCLog\Documents\Visual Studio 2017\Projects\JCL.BookShelf.UI\JCL.BookShelf.BLL\bin\Debug\netstandard2.0\JCL.BookShelf.BLL.pdb
 C:\Users\JCLog\Documents\Visual Studio 2017\Projects\JCL.BookShelf.UI\JCL.BookShelf.BLL\obj\Debug\netstandard2.0\JCL.BookShelf.BLL.dll
 C:\Users\JCLog\Documents\Visual Studio 2017\Projects\JCL.BookShelf.UI\JCL.BookShelf.BLL\obj\Debug\netstandard2.0\JCL.BookShelf.BLL.pdb
+C:\Users\JCLog\Desktop\C# Work\JCL.BookShelf\JCL.BookShelf.UI\JCL.BookShelf.BLL\bin\Debug\netstandard2.0\JCL.BookShelf.BLL.deps.json
+C:\Users\JCLog\Desktop\C# Work\JCL.BookShelf\JCL.BookShelf.UI\JCL.BookShelf.BLL\bin\Debug\netstandard2.0\JCL.BookShelf.BLL.dll
+C:\Users\JCLog\Desktop\C# Work\JCL.BookShelf\JCL.BookShelf.UI\JCL.BookShelf.BLL\bin\Debug\netstandard2.0\JCL.BookShelf.BLL.pdb
+C:\Users\JCLog\Desktop\C# Work\JCL.BookShelf\JCL.BookShelf.UI\JCL.BookShelf.BLL\obj\Debug\netstandard2.0\JCL.BookShelf.BLL.csprojAssemblyReference.cache
+C:\Users\JCLog\Desktop\C# Work\JCL.BookShelf\JCL.BookShelf.UI\JCL.BookShelf.BLL\obj\Debug\netstandard2.0\JCL.BookShelf.BLL.csproj.CoreCompileInputs.cache
+C:\Users\JCLog\Desktop\C# Work\JCL.BookShelf\JCL.BookShelf.UI\JCL.BookShelf.BLL\obj\Debug\netstandard2.0\JCL.BookShelf.BLL.AssemblyInfoInputs.cache
+C:\Users\JCLog\Desktop\C# Work\JCL.BookShelf\JCL.BookShelf.UI\JCL.BookShelf.BLL\obj\Debug\netstandard2.0\JCL.BookShelf.BLL.AssemblyInfo.cs
+C:\Users\JCLog\Desktop\C# Work\JCL.BookShelf\JCL.BookShelf.UI\JCL.BookShelf.BLL\obj\Debug\netstandard2.0\JCL.BookShelf.BLL.dll
+C:\Users\JCLog\Desktop\C# Work\JCL.BookShelf\JCL.BookShelf.UI\JCL.BookShelf.BLL\obj\Debug\netstandard2.0\JCL.BookShelf.BLL.pdb

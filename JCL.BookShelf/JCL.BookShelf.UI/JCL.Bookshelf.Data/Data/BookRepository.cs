@@ -1,4 +1,5 @@
-﻿using JCL.BookShelf.Models;
+﻿using JCL.Bookshelf.Data.Data;
+using JCL.BookShelf.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -10,86 +11,101 @@ namespace JCL.BookShelf.UI.Data
 {
     public class BookRepository
     {
-        private string _filePath;
+//        private string _filePath;
 
-        public BookRepository(string filePath)
+        public BookRepository()
         {
-            _filePath = filePath;
+       //     _filePath = filePath;
         }
 
         // CRUD
         public List<Book> List()
         {
             List<Book> books = new List<Book>();
+            SelectQuery select = new SelectQuery();
+            books = select.getAllBooks();
+//            using (StreamReader sr = new StreamReader(_filePath))
+//            {
+//                sr.ReadLine();
+//                string line;
 
-            using (StreamReader sr = new StreamReader(_filePath))
-            {
-                sr.ReadLine();
-                string line;
+//                while ((line = sr.ReadLine()) != null)
+//                {
+//                    Book newBook = new Book();
+//                    string[] columns = line.Split(',');
 
-                while ((line = sr.ReadLine()) != null)
-                {
-                    Book newBook = new Book();
-                    string[] columns = line.Split(',');
+//                    newBook.Title = columns[0];
+//                    newBook.AuthorName = columns[1];
+//                    newBook.Publisher = columns[2];
+//                    newBook.ReleaseDate = int.Parse(columns[3]);
 
-                    newBook.Title = columns[0];
-                    newBook.Author = columns[1];
-                    newBook.Publisher = columns[2];
-                    newBook.ReleaseDate = int.Parse(columns[3]);
-
-                    books.Add(newBook);
-                }
-            }
+//                    books.Add(newBook);
+//                }
+//            }
 
             return books;
         }
 
-        public void Add(Book book)
+        public Book GetBook(int BookID)
         {
-            using (StreamWriter sw = new StreamWriter(_filePath, true))
-            {
-                string line = CreateCsvForBook(book);
-
-                sw.WriteLine(line);
-            }
+            SelectQueryWithParameters para = new SelectQueryWithParameters();
+            Book book = new Book();
+            book = para.GetBook(BookID);
+            return book;
         }
 
-        public void Edit(Book book, int index)
+        public Book Add(Book book)
         {
-            var books = List();
+            //            using (StreamWriter sw = new StreamWriter(_filePath, true))
+            //            {
+            //                string line = CreateCsvForBook(book);
 
-            books[index] = book;
-
-            CreateBookFile(books);
+            //               sw.WriteLine(line);
+            //            }
+            InsertQuery insertQuery = new InsertQuery();
+            return insertQuery.InsertBook(book);
         }
 
-        public void Delete(int index)
+        public void Edit(Book book)
         {
-            var books = List();
-            books.RemoveAt(index);
+            //            var books = List();
 
-            CreateBookFile(books);
+            //            books[index] = book;
+
+            //            CreateBookFile(books);
+            UpdateQuery update = new UpdateQuery();
+            update.UpdateBook(book);
+        }
+
+        public void Delete(int BookID)
+        {
+            //    var books = List();
+            //   books.RemoveAt(index);
+
+            //  CreateBookFile(books);
+            DeleteQuery delete = new DeleteQuery();
+            delete.RemoveBook(BookID);
         }
 
         private string CreateCsvForBook(Book book)
         {
             return string.Format("{0},{1},{2},{3}", book.Title,
-                    book.Author, book.Publisher, book.ReleaseDate);
+                    book.AuthorName, book.Publisher, book.ReleaseDate);
         }
 
-        private void CreateBookFile(List<Book> books)
-        {
-            if (File.Exists(_filePath))
-                File.Delete(_filePath);
+  //      private void CreateBookFile(List<Book> books)
+  //      {
+    //        if (File.Exists(_filePath))
+      //          File.Delete(_filePath);
 
-            using (StreamWriter sr = new StreamWriter(_filePath))
-            {
-                sr.WriteLine("Title,Author,Publisher,ReleaseDate");
-                foreach (var book in books)
-                {
-                    sr.WriteLine(CreateCsvForBook(book));
-                }
-            }
-        }
+//            using (StreamWriter sr = new StreamWriter(_filePath))
+  //          {
+    //            sr.WriteLine("Title,Author,Publisher,ReleaseDate");
+      //          foreach (var book in books)
+        //        {
+          //          sr.WriteLine(CreateCsvForBook(book));
+            //    }
+         //   }
+       // }
     }
 }

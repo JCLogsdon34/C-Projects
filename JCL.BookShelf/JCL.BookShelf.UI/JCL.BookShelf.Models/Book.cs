@@ -9,12 +9,13 @@ namespace JCL.BookShelf.Models
 {
     public class Book
     {
-        public int bookID { get; set; }
+        public int BookID { get; set; }
         public string Title { get; set; }
-        public int authorID { get; set; }
-        public ArrayList Authors = new ArrayList();
-        public int PublisherID { get; set; }
-        public Publisher Publisher { get; set; }
+        public string AuthorName { get; set; }
+       // public int AuthorID { get; set; }
+      //  public ArrayList Authors = new ArrayList();
+ //       public int PublisherID { get; set; }
+        public string Publisher { get; set; }
         public int ReleaseDate { get; set; }
     }
 }

@@ -41,6 +41,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\BookRepository.cs" />
+    <Compile Include="Data\DeleteQuery.cs" />
+    <Compile Include="Data\InsertQuery.cs" />
+    <Compile Include="Data\SelectQuery.cs" />
+    <Compile Include="Data\SelectQueryWithParameters.cs" />
+    <Compile Include="Data\UpdateQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

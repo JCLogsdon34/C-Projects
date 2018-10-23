@@ -19,16 +19,16 @@ namespace JCL.Banker.BLL
             _accountRepository = accountRepository;
         }
 
-        public AccountLookupResponse LookupAccount(string accountNumber)
+        public AccountLookupResponse LookupAccount(int AccountID)
         {
             AccountLookupResponse response = new AccountLookupResponse();
 
-            response.Account = _accountRepository.LoadAccount(accountNumber);
+            response.Account = _accountRepository.LoadAccount(AccountID);
 
             if(response.Account == null)
             {
                 response.Success = false;
-                response.Message = $"{accountNumber} is not a valid account";
+                response.Message = $"{AccountID} is not a valid account";
             } 
             else
             {
@@ -38,16 +38,16 @@ namespace JCL.Banker.BLL
             return response;
         }
 
-        public AccountDepositResponse Deposit(string accountNumber, decimal amount)
+        public AccountDepositResponse Deposit(int AccountID, decimal amount)
         {
             AccountDepositResponse response = new AccountDepositResponse();
 
-            response.Account = _accountRepository.LoadAccount(accountNumber);
+            response.Account = _accountRepository.LoadAccount(AccountID);
 
             if (response.Account == null)
             {
                 response.Success = false;
-                response.Message = $"{accountNumber} is not a valid account";
+                response.Message = $"{AccountID} is not a valid account";
             }
             else
             {
@@ -64,16 +64,16 @@ namespace JCL.Banker.BLL
             return response;
         }
 
-        public AccountWithdrawResponse Withdraw(string accountNumber, decimal amount)
+        public AccountWithdrawResponse Withdraw(int AccountID, decimal amount)
         {
             AccountWithdrawResponse response = new AccountWithdrawResponse();
 
-            response.Account = _accountRepository.LoadAccount(accountNumber);
+            response.Account = _accountRepository.LoadAccount(AccountID);
 
             if (response.Account == null)
             {
                 response.Success = false;
-                response.Message = $"{accountNumber} is not a valid account";
+                response.Message = $"{AccountID} is not a valid account";
             }
             else
             {

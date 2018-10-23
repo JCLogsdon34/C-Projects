@@ -7,3 +7,7 @@ c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Da
 c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Data\obj\Debug\JCL.Banker.Data.csproj.CopyComplete
 c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Data\obj\Debug\JCL.Banker.Data.dll
 c:\users\jclog\documents\visual studio 2017\Projects\JCL.Banker.UI\JCL.Banker.Data\obj\Debug\JCL.Banker.Data.pdb
+C:\Users\JCLog\Desktop\C# Work\JCL.Banker\JCL.Banker.UI\JCL.Banker.Data\obj\Debug\JCL.Banker.Data.csprojAssemblyReference.cache
+C:\Users\JCLog\Desktop\C# Work\JCL.Banker\JCL.Banker.UI\JCL.Banker.Data\obj\Debug\JCL.Banker.Data.csproj.CoreCompileInputs.cache
+C:\Users\JCLog\Desktop\C# Work\JCL.Banker\JCL.Banker.UI\JCL.Banker.Data\obj\Debug\JCL.Banker.Data.dll
+C:\Users\JCLog\Desktop\C# Work\JCL.Banker\JCL.Banker.UI\JCL.Banker.Data\obj\Debug\JCL.Banker.Data.pdb

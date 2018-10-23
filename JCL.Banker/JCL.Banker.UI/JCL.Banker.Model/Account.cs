@@ -8,8 +8,9 @@ namespace JCL.Banker.Model
 {
     public class Account
     {
-        public string Name { get; set; }
-        public string AccountNumber { get; set; }
+        public int AccountID { get; set; }
+        public string AccountName { get; set; }
+        public int BalanceID { get; set; }
         public decimal Balance { get; set; }
         public AccountType Type { get; set; }
 

@@ -13,7 +13,7 @@ namespace JCL.BookShelf.UI.Workflows
     {
         public void Execute()
         {
-            BookRepository repo = new BookRepository(Settings.FilePath);
+            BookRepository repo = new BookRepository();
             List<Book> books = repo.List();
 
             Console.Clear();
@@ -23,7 +23,7 @@ namespace JCL.BookShelf.UI.Workflows
 
             foreach (var book in books)
             {
-                Console.WriteLine(ConsoleIO.BookLineFormat, book.Title + ", " + book.Author + ", " + book.Publisher + ", " + book.ReleaseDate.ToString());
+                Console.WriteLine(ConsoleIO.BookLineFormat, book.Title + ", " + book.AuthorName + ", " + book.Publisher + ", " + book.ReleaseDate.ToString());
             }
 
             Console.WriteLine();

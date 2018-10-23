@@ -16,7 +16,7 @@ namespace JCL.BookShelf.UI.Workflows
             Console.Clear();
             Console.WriteLine("Edit Book Release Date");
 
-            BookRepository repo = new BookRepository(Settings.FilePath);
+            BookRepository repo = new BookRepository();
             List<Book> books = repo.List();
 
             ConsoleIO.PrintBookListHeader();
@@ -28,9 +28,9 @@ namespace JCL.BookShelf.UI.Workflows
             Console.WriteLine();
 
             books[index].ReleaseDate = ConsoleIO.GetRequiredDateTimeFromUser(string.Format("Enter new Release Date for {0} {1}: ", books[index].Title,
-                books[index].Author));
+                books[index].AuthorName));
 
-            repo.Edit(books[index], index);
+            repo.Edit(books[index]);
             Console.WriteLine("Release Date updated!");
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();

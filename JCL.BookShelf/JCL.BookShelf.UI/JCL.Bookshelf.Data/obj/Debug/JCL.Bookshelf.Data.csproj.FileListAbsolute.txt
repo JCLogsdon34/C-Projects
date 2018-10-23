@@ -7,3 +7,12 @@ C:\Users\JCLog\Documents\Visual Studio 2017\Projects\JCL.BookShelf.UI\JCL.Booksh
 C:\Users\JCLog\Documents\Visual Studio 2017\Projects\JCL.BookShelf.UI\JCL.Bookshelf.Data\obj\Debug\JCL.Bookshelf.Data.csproj.CopyComplete
 C:\Users\JCLog\Documents\Visual Studio 2017\Projects\JCL.BookShelf.UI\JCL.Bookshelf.Data\obj\Debug\JCL.Bookshelf.Data.dll
 C:\Users\JCLog\Documents\Visual Studio 2017\Projects\JCL.BookShelf.UI\JCL.Bookshelf.Data\obj\Debug\JCL.Bookshelf.Data.pdb
+C:\Users\JCLog\Desktop\C# Work\JCL.BookShelf\JCL.BookShelf.UI\JCL.Bookshelf.Data\bin\Debug\JCL.Bookshelf.Data.dll
+C:\Users\JCLog\Desktop\C# Work\JCL.BookShelf\JCL.BookShelf.UI\JCL.Bookshelf.Data\bin\Debug\JCL.Bookshelf.Data.pdb
+C:\Users\JCLog\Desktop\C# Work\JCL.BookShelf\JCL.BookShelf.UI\JCL.Bookshelf.Data\bin\Debug\JCL.BookShelf.Models.dll
+C:\Users\JCLog\Desktop\C# Work\JCL.BookShelf\JCL.BookShelf.UI\JCL.Bookshelf.Data\bin\Debug\JCL.BookShelf.Models.pdb
+C:\Users\JCLog\Desktop\C# Work\JCL.BookShelf\JCL.BookShelf.UI\JCL.Bookshelf.Data\obj\Debug\JCL.Bookshelf.Data.csprojAssemblyReference.cache
+C:\Users\JCLog\Desktop\C# Work\JCL.BookShelf\JCL.BookShelf.UI\JCL.Bookshelf.Data\obj\Debug\JCL.Bookshelf.Data.csproj.CoreCompileInputs.cache
+C:\Users\JCLog\Desktop\C# Work\JCL.BookShelf\JCL.BookShelf.UI\JCL.Bookshelf.Data\obj\Debug\JCL.Bookshelf.Data.csproj.CopyComplete
+C:\Users\JCLog\Desktop\C# Work\JCL.BookShelf\JCL.BookShelf.UI\JCL.Bookshelf.Data\obj\Debug\JCL.Bookshelf.Data.dll
+C:\Users\JCLog\Desktop\C# Work\JCL.BookShelf\JCL.BookShelf.UI\JCL.Bookshelf.Data\obj\Debug\JCL.Bookshelf.Data.pdb

@@ -11,8 +11,8 @@ namespace JCL.Banker.UI
     {
         public static void DisplayAccountDetails(Account account)
         {
-            Console.WriteLine($"Account Number: {account.AccountNumber}");
-            Console.WriteLine($"Name: {account.Name}");
+            Console.WriteLine($"Account Number: {account.AccountID}");
+            Console.WriteLine($"Name: {account.AccountName}");
             Console.WriteLine($"Balance: {account.Balance:c}");
         }
     }

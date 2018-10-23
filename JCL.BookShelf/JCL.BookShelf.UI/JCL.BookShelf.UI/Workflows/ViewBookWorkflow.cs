@@ -16,7 +16,7 @@ namespace JCL.BookShelf.UI.Workflows
             Console.Clear();
             Console.WriteLine("View Book");
 
-            BookRepository repo = new BookRepository(Settings.FilePath);
+            BookRepository repo = new BookRepository();
             List<Book> books = repo.List();
 
             
@@ -27,11 +27,11 @@ namespace JCL.BookShelf.UI.Workflows
             int index = ConsoleIO.GetBookIndexFromUser("Which book would you like to view?", books.Count());
             index--;
 
-            string answer = ConsoleIO.GetYesNoAnswerFromUser($"Are you sure you want to remove {books[index].Title} {books[index].Author}");
+            string answer = ConsoleIO.GetYesNoAnswerFromUser($"Are you sure you want to remove {books[index].Title} {books[index].AuthorName}");
 
             //foreach (var book in books)
            // {
-                Console.WriteLine(ConsoleIO.BookLineFormat, books[index].Title + ", " + books[index].Author + ", " + books[index].Publisher + ", " + books[index].ReleaseDate.ToString());
+                Console.WriteLine(ConsoleIO.BookLineFormat, books[index].Title + ", " + books[index].AuthorName + ", " + books[index].Publisher + ", " + books[index].ReleaseDate.ToString());
            // }
 
             Console.WriteLine();

@@ -19,8 +19,9 @@ namespace JCL.Banker.UI.Workflows
             Console.WriteLine("-----------------------------");
             Console.Write("Enter an account number: ");
             string accountNumber = Console.ReadLine();
+            int AccountID = int.Parse(accountNumber);
 
-            AccountLookupResponse response = manager.LookupAccount(accountNumber);
+            AccountLookupResponse response = manager.LookupAccount(AccountID);
 
             if (response.Success)
             {

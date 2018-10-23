@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace JCL.Banker.Model
 {
-    public enum AccountType
+    [FlagsAttribute]
+    public enum AccountType : int
     {
         Free = 1,
         Basic = 2,

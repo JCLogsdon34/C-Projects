@@ -16,7 +16,7 @@ namespace JCL.BookShelf.UI.Helpers
         public static void PrintBookListHeader()
         {
             Console.WriteLine(SeparatorBar);
-            Console.WriteLine(BookLineFormat, "Title", "Author", "Publisher", "Release Date");
+            Console.WriteLine(BookLineFormat, "BookID", "Title", "Author", "Publisher", "Release Date");
             Console.WriteLine(SeparatorBar);
         }
 
@@ -43,16 +43,16 @@ namespace JCL.BookShelf.UI.Helpers
         public static void PrintPickListOfBooks(List<Book> books)
         {
             Console.WriteLine(SeparatorBar);
-            Console.WriteLine(PickBookLineFormat, "", "Title", "Author", "Publisher", "Release Date");
+            Console.WriteLine(PickBookLineFormat, "BookID", "Title", "Author", "Publisher", "Release Date");
             Console.WriteLine(SeparatorBar);
 
             for (int i = 0; i < books.Count(); i++)
             {
-                Console.WriteLine(PickBookLineFormat, i + 1, books[i].Title + ", " + books[i].Publisher + ", " +
-                    books[i].Author, books[i].ReleaseDate);
+                Console.WriteLine(PickBookLineFormat, i + 1, books[i].BookID + " ," + books[i].Title + ", " + books[i].AuthorName + ", " + books[i].Publisher + ", " +
+                 books[i].ReleaseDate);
             }
 
-            Console.WriteLine();
+         //   Console.WriteLine();
             Console.WriteLine(SeparatorBar);
         }
 

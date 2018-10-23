@@ -13,6 +13,7 @@ namespace JCL.BookShelf.UI.Workflows
     {
         public void Execute()
         {
+            BookRepository repo = new BookRepository();
             Console.Clear();
             Console.WriteLine("Add Book");
             Console.WriteLine(ConsoleIO.SeparatorBar);
@@ -21,19 +22,14 @@ namespace JCL.BookShelf.UI.Workflows
             Book newBook = new Book();
 
             newBook.Title = ConsoleIO.GetRequiredStringFromUser("Title: ");
-            newBook.Author = ConsoleIO.GetRequiredStringFromUser("Author: ");
+            newBook.AuthorName = ConsoleIO.GetRequiredStringFromUser("Author: ");
             newBook.Publisher = ConsoleIO.GetRequiredStringFromUser("Publisher: ");
             newBook.ReleaseDate = ConsoleIO.GetRequiredDateTimeFromUser("ReleaseDate: ");
-
-            Console.WriteLine();
-            ConsoleIO.PrintBookListHeader();
-            Console.WriteLine(ConsoleIO.BookLineFormat, newBook.Title + ", " + newBook.Author + ", " + newBook.Publisher + ", " + newBook.ReleaseDate);
-
-            Console.WriteLine();
+            
             if (ConsoleIO.GetYesNoAnswerFromUser("Add the following information") == "Y")
-            {
-                BookRepository repo = new BookRepository(Settings.FilePath);
-                repo.Add(newBook);
+            {  
+                newBook = repo.Add(newBook);
+                Console.WriteLine("BookID: " + newBook.BookID);
                 Console.WriteLine("Book Added!");
                 Console.WriteLine("Press any key to continue...");
                 Console.ReadKey();

@@ -8,7 +8,7 @@ namespace JCL.BookShelf.Models
 {
     public class Publisher
     {
-        public int pubID { get; set; }
+        public int PubID { get; set; }
         public string PublisherName { get; set; }
     }
 }
